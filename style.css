@@ -29,7 +29,7 @@ header {
 
 main {
     display: flex;
-    gap: 100px;
+    gap: 70px;
     margin: auto;
 }
 
@@ -93,7 +93,7 @@ main {
 }
 
 table {
-    max-width: 800px;
+    max-width: 1000px;
     border-collapse: collapse;
     border-radius: 5px;
     background-color: rgb(241, 238, 238);
@@ -109,16 +109,18 @@ table {
 
     th {
         border: 1px solid rgba(0, 0, 0, 0.469);
-        padding: 10px;
         width: 200px;
-
+        box-sizing: border-box;
+        overflow: hidden
     }
 
     td {
         border: 1px solid rgba(0, 0, 0, 0.469);
         padding: 5px;
         text-align: center;
-       max-width: 150px;
+        max-width: 150px;
+        box-sizing: border-box;
+        overflow: hidden
     }
 }
 
