@@ -30,7 +30,7 @@ require "db.php";
                         <input type="text" name="firstName" required>
                         <label for="mail">Mail</label>
                         <input type="email" name="mail" required>
-                        <label for="zipCode">zipCode</label>
+                        <label for="zipCode">Code postal</label>
                         <input type="number" name="zipCode" required>
                         <button class="btn" type="submit">Valider</button>
                     </form>
@@ -52,17 +52,19 @@ require "db.php";
                         <label for="updateZipCode">Code Postal</label>
                         <input type="number" name="updateZipCode" value="<?= htmlspecialchars($userToUpdate['zipCode']); ?>" required>
                         <button type="submit" name="submit_update">Mettre à jour</button>
-                        <? $e?>
+                        <? $e ?>
                     </form>
                 </div>
             </section>
         <?php endif; ?>
+
         <table>
             <tr>
                 <th>Prénom</th>
                 <th>Nom</th>
                 <th>Mail</th>
                 <th>Code postal</th>
+                <th>Action</th>
             </tr>
             <?php foreach ($users as $entry) { ?>
                 <tr>
@@ -82,6 +84,7 @@ require "db.php";
                 </tr>
             <?php } ?>
         </table>
+
     </main>
 </body>
 
